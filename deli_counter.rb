@@ -1,7 +1,7 @@
 katz_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"]
 
 def line(deli_arr)
-    if deli_arr.size == 0
+    if deli_arr.empty?
         puts "The line is currently empty."
     else
         current_line = "The line is currently: "
@@ -18,7 +18,7 @@ def take_a_number(deli_arr, guest_name)
 end
 
 def now_serving(deli_arr)
-    if deli_arr.size == 0
+    if deli_arr.empty?
         puts "There is nobody waiting to be served!"
     else 
         puts "Currently serving #{deli_arr[0]}."
